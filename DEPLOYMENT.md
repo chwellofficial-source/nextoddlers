@@ -27,7 +27,7 @@ git add .
 git commit -m "Initial commit - NexToddlers PWA"
 
 # Add your GitHub repository as remote (replace YOUR_USERNAME)
-git remote add origin https://github.com/chwellofficial-source/nextoddlers
+git remote add origin https://github.com/chwellofficial-source/nextoddlers.git
 # Push to GitHub
 git branch -M main
 git push -u origin main
