@@ -5,7 +5,7 @@ import { useStore } from '../store/useStore';
 import { curriculum, LearningItem } from '../data/curriculum';
 import { translations } from '../data/i18n';
 import confetti from 'canvas-confetti';
-import { Volume2, Mic, X, ArrowRight } from 'lucide-react';
+import { Volume2, Mic, X, ArrowRight, RotateCcw } from 'lucide-react';
 
 // Extend Window interface for SpeechRecognition
 interface IWindow extends Window {
