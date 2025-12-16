@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#FFFDF5" />
+    <meta name="description" content="NexToddlers - English learning for kids" />
+    <title>NexToddlers</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              cream: { 50: '#FFFDF5' },
+              peach: { 400: '#FFB799' },
+              green: { 500: '#84CC16' },
+              midnight: { 900: '#0F172A' },
+            },
+            fontFamily: {
+              sans: ['system-ui', 'sans-serif'],
+            },
+            keyframes: {
+              'bounce-slight': {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-5%)' },
+              }
+            },
+            animation: {
+              'bounce-slight': 'bounce-slight 0.3s ease-in-out',
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.10.1",
+    "@vitejs/plugin-react": "https://aistudiocdn.com/@vitejs/plugin-react@^5.1.2",
+    "vite": "https://aistudiocdn.com/vite@^7.2.7",
+    "vite-plugin-pwa": "https://aistudiocdn.com/vite-plugin-pwa@^1.2.0",
+    "zustand/": "https://aistudiocdn.com/zustand@^5.0.9/",
+    "zustand": "https://aistudiocdn.com/zustand@^5.0.9",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0",
+    "canvas-confetti": "https://aistudiocdn.com/canvas-confetti@^1.9.4"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-cream-50 text-midnight-900 font-sans antialiased selection:bg-peach-400 selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
